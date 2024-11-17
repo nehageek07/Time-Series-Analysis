@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f5f7;
+}
+
+header {
+    background-color: #09123c;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust the height as needed */
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-btn {
+    background-color: #aa7aeb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: #212227;
+
+}
+
+.intro p {
+    font-size: 18px;
+    color: #010101;
+    margin: 20px 0;
+}
+
+.filters {
+    margin: 40px 0;
+}
+
+.filters ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filters ul li {
+    background-color: #aa7aeb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters ul li:hover{
+    background-color: #98A5E3;
+    color: black;
+}
+.filters ul .upload-data-btn {
+    background-color: #212227;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+.filters ul .upload-data-btn:hover {
+    background-color: #010101;
+}
+
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.features {
+    background-color: #f4f5f7;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.features h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #212227;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+.cta {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #212227;
+}
+
+.cta-btn {
+    background-color: #aa7aeb;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.pricing {
+    background-color: #f4f5f7;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.pricing h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #212227;
+}
+
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pricing-toggle button {
+    background-color: #e9ecef;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* .pricing-toggle .active {
+    background-color: #aa7aeb;
+    color: white;
+} */
+
+
+.pricing-toggle button:hover {
+    background-color: #98A5E3;
+}
+
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 72px;
+    color: #212227;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.plan button {
+    background-color:#aa7aeb;
+    color: #e9ecef;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 150px;
+}
+
+footer {
+    background-color: #09123c;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contact {
+    text-align: left;
+}
+
+footer .contact p {
+    margin: 5px 0;
+}
+
+footer .social {
+    display: flex;
+    gap: 20px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+}
+.login-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.login-section h2 {
+    font-size: 36px;
+    color: #aa7aeb;
+}
+
+.login-form {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form .login-btn {
+    background-color: #aa7aeb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+/* New CSS for the login and registration links */
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #aa7aeb;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* New CSS for the registration form */
+.register-main {
+    flex: 1;
+}
+
+.register-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.register-section h2 {
+    font-size: 36px;
+    color: #aa7aeb;
+}
+
+.register-form {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-btn {
+    background-color: #aa7aeb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+

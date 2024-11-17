@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ForecastFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="ForecastFlow Logo">
+                </div>
+            </div>
+        </header>
+
+        <main class="register-main">
+            <section class="register-section">
+                <h2>Register</h2>
+                <form class="register-form" id="registerForm">
+                    <label for="store-name">Store Name:</label>
+                    <input type="text" id="store-name" name="store-name" required>
+                    
+                    <label for="store-id">Store ID (Username):</label>
+                    <input type="text" id="store-id" name="store-id" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="contact">
+                    <p>yash240593@gmail.com</p>
+                    <p>+7 999 028 64-28</p>
+                </div>
+                <div class="social">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerForm = document.getElementById('registerForm');
+            
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get input values
+                const storeName = document.getElementById('store-name').value;
+                const storeId = document.getElementById('store-id').value;
+                const password = document.getElementById('password').value;
+
+                // Store the credentials securely (for simplicity using localStorage in this example)
+                const user = {
+                    storeName: storeName,
+                    storeId: storeId,
+                    password: password
+                };
+
+                // Save user data to localStorage (or your backend database/API)
+                localStorage.setItem('user', JSON.stringify(user));
+
+                // Redirect to login page after registration
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>

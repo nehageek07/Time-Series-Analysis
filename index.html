@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForecastFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="ForecastFlow Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sales-dashboard">Overview</a></li>
+                    <li><a href="#real-time-insights">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#footer">Support</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn" onclick="location.href='login.html'">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="sales-dashboard" class="intro">
+            <h2>Sales Dashboard</h2>
+            <p>SaaS dashboard that enables users to perform various tasks and activities related to their business</p>
+            <div class="filters">
+                <ul>
+                    <li>Filter 1</li>
+                    <li>Filter 2</li>
+                    <li>Filter 3</li>
+                    <li>Forecasting</li>
+                    <!-- <a href="#" style="text-decoration: none;"><li>Upload Data</li></a> -->
+                    <a href="templates\index1.html" class="upload-data-btn">Upload Data</a>
+
+                </ul>
+            </div>
+            <div class="charts">
+                <div class="chart"><img src="newplot (1).png" alt="Chart 1"></div>
+                <div class="chart"><img src="newplot (2).png" alt="Chart 2"></div>
+                <div class="chart"><img src="newplot (3).png" alt="Chart 3"></div>
+                <div class="chart"><img src="newplot (4).png" alt="Chart 4"></div>
+                <div class="chart"><img src="newplot (5).png" alt="Chart 5"></div>
+                <div class="chart"><img src="newplot (6).png" alt="Chart 6"></div>
+            </div>
+        </section>
+
+        <section id="real-time-insights" class="features">
+            <h2>Real-Time Insights, Real-Time Results</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="chart-image"><img src="1.png" alt="Chart 1"></div>
+                    <h3>Data Visualization</h3>
+                    <p>The ability to present complex data in a visually understandable way, such as through charts.</p>
+                </div>
+                <div class="feature">
+                    <div class="chart-image"><img src="2.png" alt="Chart 2"></div>
+                    <h3>Integration</h3>
+                    <p>Seamless integration with other software and tools that a business uses, creating a unified system.</p>
+                </div>
+                <div class="feature">
+                    <div class="chart-image"><img src="3.png" alt="Chart 3"></div>
+                    <h3>Customization</h3>
+                    <p>Allowing users to tailor the dashboard to their specific needs and preferences.</p>
+                </div>
+                <div class="feature">
+                    <div class="chart-image"><img src="4.png" alt="Chart 4"></div>
+                    <h3>Reporting</h3>
+                    <p>Generating detailed reports that provide insights into the business's performance.</p>
+                </div>
+                <div class="feature">
+                    <div class="chart-image"><img src="5.png" alt="Chart 5"></div>
+                    <h3>User Access Control</h3>
+                    <p>Managing who can access and interact with the dashboard, ensuring data security.</p>
+                </div>
+                <div class="feature">
+                    <div class="chart-image"><img src="6.png" alt="Chart 6"></div>
+                    <h3>Collaboration Tools</h3>
+                    <p>Features that facilitate teamwork and communication among team members.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-toggle">
+                <button class="monthly active" onclick="showMonthlyPlans()">Monthly</button>
+                <button class="yearly" onclick="showYearlyPlans()">Yearly</button>
+            </div>
+            <div class="pricing-plans">
+                <div class="plan monthly">
+                    <h3>Starter</h3>
+                    <p>$0</p>
+                    <ul>
+                        <li>Data Visualization</li>
+                        <li>Real-Time Analytics</li>
+                        <li>Customization</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+                <div class="plan monthly">
+                    <h3>Business</h3>
+                    <p>$20</p>
+                    <ul>
+                        <li>All Basic Plan Features</li>
+                        <li>Integrations</li>
+                        <li>Advanced Reporting</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+                <div class="plan monthly">
+                    <h3>Enterprise</h3>
+                    <p>$79</p>
+                    <ul>
+                        <li>All Pro Plan Features</li>
+                        <li>Full Access to API</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+
+
+                <div class="plan yearly" style="display: none;">
+                    <h3>Starter</h3>
+                    <p>$0</p>
+                    <ul>
+                        <li>Data Visualization</li>
+                        <li>Real-Time Analytics</li>
+                        <li>Customization</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+                <div class="plan yearly" style="display: none;">
+                    <h3>Business</h3>
+                    <p>$200</p>
+                    <ul>
+                        <li>All Basic Plan Features</li>
+                        <li>Integrations</li>
+                        <li>Advanced Reporting</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+                <div class="plan yearly" style="display: none;">
+                    <h3>Enterprise</h3>
+                    <p>$790</p>
+                    <ul>
+                        <li>All Pro Plan Features</li>
+                        <li>Full Access to API</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="contact">
+                <p>yash240593@gmail.com</p>
+                <p>+7 999 028 64-28</p>
+            </div>
+            <div class="social">
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to show monthly plans
+        function showMonthlyPlans() {
+            document.querySelectorAll('.plan.monthly').forEach(plan => {
+                plan.style.display = 'block';
+            });
+            document.querySelectorAll('.plan.yearly').forEach(plan => {
+                plan.style.display = 'none';
+            });
+            document.querySelector('.monthly').classList.add('active');
+            document.querySelector('.yearly').classList.remove('active');
+        }
+
+        // Function to show yearly plans
+        function showYearlyPlans() {
+            document.querySelectorAll('.plan.monthly').forEach(plan => {
+                plan.style.display = 'none';
+            });
+            document.querySelectorAll('.plan.yearly').forEach(plan => {
+                plan.style.display = 'block';
+            });
+            document.querySelector('.yearly').classList.add('active');
+            document.querySelector('.monthly').classList.remove('active');
+        }
+
+        // Optional smooth scrolling functionality using JavaScript
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const sectionId = this.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

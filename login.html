@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ForecastFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="ForecastFlow Logo">
+                </div>
+            </div>
+        </header>
+
+        <main class="login-main">
+            <section class="login-section">
+                <h2>Login</h2>
+                <form class="login-form" id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <p class="register-link">Don't have an account? <a href="register.html">Register here</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="contact">
+                    <p>yash240593@gmail.com</p>
+                    <p>+7 999 028 64-28</p>
+                </div>
+                <div class="social">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+            
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get input values
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Retrieve user data from localStorage
+                const storedUser = JSON.parse(localStorage.getItem('user'));
+
+                // Validate credentials
+                if (storedUser && storedUser.storeId === username && storedUser.password === password) {
+                    // Successful login, redirect to homepage
+                    window.location.href = 'index.html';
+                } else {
+                    // Show error message or alert
+                    alert('Invalid username or password. Please try again.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
